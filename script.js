@@ -13,11 +13,11 @@ function renderWeather(mainInfo, cityName, countryCode){
     console.log(regionNameInEnglish.of(countryCode));
     const countryName = regionNameInEnglish.of(countryCode);
     document.getElementById('location').textContent = ` ${cityName}, ${countryName}`;
-    document.getElementById('feels').textContent = `Feels: ${mainInfo.feels_like}`;
-    document.getElementById('humidity').textContent = `Hum.: ${mainInfo.humidity}`;
-    document.getElementById('temp').textContent = `Temp.: ${mainInfo.temp}`;
-    document.getElementById('max').textContent = `Max temp.: ${mainInfo.temp_max}`;
-    document.getElementById('min').textContent = `Min temp.:${mainInfo.temp_min}`;
+    document.getElementById('feels').textContent = `Feels: ${mainInfo.feels_like}℉`;
+    document.getElementById('humidity').textContent = `Hum.: ${mainInfo.humidity} %` ;
+    document.getElementById('temp').textContent = `Temp.: ${mainInfo.temp}℉`;
+    document.getElementById('max').textContent = `Max temp.: ${mainInfo.temp_max}℉`;
+    document.getElementById('min').textContent = `Min temp.: ${mainInfo.temp_min}℉`;
 }
 
 function searchError(error){

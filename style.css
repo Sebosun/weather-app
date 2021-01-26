@@ -1,6 +1,9 @@
 body{
     background-color: black;
     color: beige;
+    font-family: 'Abel', sans-serif;
+
+
 }
 
 #main{
@@ -16,13 +19,16 @@ form{
     padding-top: 20px;
 }
 
+
+
 .disData{
     display:grid;
-    grid-template-rows: 1fr 1fr;
-    /* grid-gap: 2rem; */
-    width: 40vh;
-    border: bisque 1px solid;
+    grid-template-rows: 1fr 1fr;    
     font-size: 2rem;
+    text-align: justify;
+}
+.location{
+    color:red;
 }
 
 button{
