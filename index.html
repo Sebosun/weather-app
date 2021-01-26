@@ -8,14 +8,22 @@
 </head>
 <body>
     <div id="main">
-        <div class="disWeather">
-            <div id="feels">Feels like: 200 f</div>
-            <div id="humidity">Humidity: 93%</div> 
-            <div id="temp">Temp: 273.34</div>
-            <div id="max">Max. Temp: 273.71</div>
-            <div id="min">Min. Temp: 273.15</div>
-        </div>
+        <!-- <div class="container"> -->
+            <div class="disData">
+                
+                <div id="feels"></div>
+                <div id="humidity"></div> 
+                <div id="temp"></div>
+                <div id="max"></div>
+                <div id="min"></div>
+                <div id="location"></div> 
+            </div>
+            <form onsubmit="return false">
+                <input id="input" name="input" placeholder="Enter city name" type="text">
+            </form>
+        <!-- </div> -->
     </div>
+
   <script src="script.js">
   </script>
 </body>
