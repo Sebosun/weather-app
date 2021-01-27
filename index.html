@@ -11,20 +11,22 @@
 </head>
 <body>
     <div id="main">
-        <!-- <div class="container"> -->
+        <div class="container">
             <div class="disData">
-                <div id="location">&deg;C</div> 
+                <div id="location"></div> 
                 <div id="feels"></div>
                 <div id="humidity"></div> 
                 <div id="temp"></div>
                 <div id="max"></div>
                 <div id="min"></div>
-                
+                <form onsubmit="return false">
+                    <input id="input" name="input" placeholder="Enter city name" type="text">
+                </form>
+
             </div>
-            <form onsubmit="return false">
-                <input id="input" name="input" placeholder="Enter city name" type="text">
-            </form>
-        <!-- </div> -->
+            
+        </div>
+        <div id="error"></div>
     </div>
 
   <script src="script.js">

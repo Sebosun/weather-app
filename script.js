@@ -28,6 +28,7 @@ function searchError(error){
 
 function fetchWeather(location){
     let apiKey = '46bd11e9595da19b2c40277e75de6acb'
+    document.getElementById('error').style = "display: none"
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`, {mode: 'cors'})
     .then(function(response){
         return response.json();
@@ -38,6 +39,9 @@ function fetchWeather(location){
     })
     .catch(error => {
         searchError(error)
+        console.log(error)
+        document.getElementById('error').style = "display: block"
+        document.getElementById('error').textContent = `Error. Could not find the target place.`
     });
 
 }
@@ -52,4 +56,4 @@ search.addEventListener('keypress', function(e) {
     }
 });
 
-fetchWeather('warsaw');
+fetchWeather('london');

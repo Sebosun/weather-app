@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgb(110, 103, 103);
     color: beige;
     font-family: 'Abel', sans-serif;
 
@@ -9,26 +9,34 @@ body{
 #main{
     display: flex;
     flex-direction: column;
-    margin: 0; 
-    text-align: center;
+    /* margin: 0;  */
+    /* text-align: center; */
     align-items: center;
     padding: 50px;
 }
 
-form{
-    padding-top: 20px;
+
+.container{
+    width: 40vh;
 }
 
+input{
+    width: 100%;
+    border-radius: 25px;
+    padding: 8px 8px 8px 8px;
+    outline: none;
+}
 
-
-.disData{
-    display:grid;
-    grid-template-rows: 1fr 1fr;    
+.disData{    
     font-size: 2rem;
     text-align: justify;
 }
-.location{
-    color:red;
+
+#error{
+    color: rgb(157, 255, 0);
+    font-size: larger;
+    font-style: oblique;
+    display: none;
 }
 
 button{
